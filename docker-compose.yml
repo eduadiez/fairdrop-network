@@ -1,0 +1,11 @@
+version: '3.4'
+services:
+    fairdrop-network.public.dappnode.eth:
+        image: 'fairdrop-network.public.dappnode.eth:0.0.2'
+        build: ./build
+        ports:
+            - '8888:80'
+        volumes:
+            - 'fairdrop-network:/root/.ethereum'
+volumes:
+    fairdrop-network: {}
